@@ -1,11 +1,3 @@
-# Jishu Developer 
-# Don't Remove Credit 🥺
-# Telegram Channel @Madflix_Bots
-# Backup Channel @JishuBotz
-# Developer @JishuDeveloper
-
-
-
 
 import os
 import sys
@@ -37,7 +29,7 @@ async def start(client, message):
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id, user.first_name)
     reply_markup = InlineKeyboardMarkup(main_buttons)
-    jishubotz = await message.reply_sticker("CAACAgUAAxkBAAECEEBlLA-nYcsWmsNWgE8-xqIkriCWAgACJwEAAsiUZBTiPWKAkUSmmh4E")
+    jishubotz = await message.reply_sticker("CAACAgUAAxkBAAIgfWX2P3v1C4DKe1DsFBfPNWenAAGmaAACoQADyJRkFOU68dHdpF6XHgQ")
     await asyncio.sleep(2)
     await jishubotz.delete()
     text=Translation.START_TXT.format(user.mention)
